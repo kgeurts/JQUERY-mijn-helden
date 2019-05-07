@@ -1,0 +1,47 @@
+html{
+	min-height: 100vh;
+	max-width: 99vh;
+}
+body {
+    font-family: Bellerose;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 99vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* h1 main (is variabel) footer*/
+}
+h1{
+    text-align: center;
+}
+section img{
+	height: 250px;
+	width: 250px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section{
+    text-align: center;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: .5em;
+    position: relative;
+    cursor: pointer;
+    height: 100px;
+}
+
+@media screen and (min-width: 800px) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1000px) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
